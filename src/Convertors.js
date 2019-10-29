@@ -140,7 +140,7 @@ export function convertToObject(htmlString, styleList = null) {
 
   const availableStyles = styleList == null ? defaultStyles : styleList;
   
-  const doc = new DOMParser().parseFromString(htmlString, 'text/xml');
+  const doc = new DOMParser().parseFromString(htmlString, 'text/html');
   let contents = [];
   let item = null;
 
